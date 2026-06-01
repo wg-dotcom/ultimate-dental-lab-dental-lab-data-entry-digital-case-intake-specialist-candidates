@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dental Lab Data Entry &amp; Digital Case Intake Specialist Candidates — Ultimate Dental Lab</title>
+  <link rel="icon" type="image/png" href="https://ultimatedentallab.com/wp-content/uploads/2021/08/8211-Digital-Scaling-Image.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&family=Lato:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #f7921c;
+      --primary-dark: #d27c18;
+      --primary-deeper: #ad6614;
+      --primary-soft: #f7921c26;
+      --primary-light: #f7921c14;
+      --accent-light: #f9b360;
+      --dark: #000000;
+      --highlight: #ffffff;
+      --bg-light: #1f1f1f;
+      --bg-subtle: #333333;
+      --bg-page: #000000;
+      --bg-card: #141414;
+      --bg-card-hover: #242424;
+      --white: #FFFFFF;
+      --text-primary: #ffffff;
+      --text-mid: rgba(255,255,255,0.82);
+      --text-light: rgba(255,255,255,0.65);
+      --text-muted: rgba(255,255,255,0.5);
+      --on-dark: #ffffff;
+      --on-dark-mid: rgba(255,255,255,0.82);
+      --on-dark-light: rgba(255,255,255,0.65);
+      --on-dark-muted: rgba(255,255,255,0.15);
+      --border: rgba(255,255,255,0.14);
+      --border-strong: rgba(255,255,255,0.25);
+      --tag-bg: #f7921c33;
+      --tag-color: #f9b360;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
+      --shadow-md: 0 1px 3px rgba(0,0,0,0.04), 0 8px 28px rgba(0,0,0,0.06);
+      --shadow-lg: 0 1px 3px rgba(0,0,0,0.04), 0 16px 48px rgba(0,0,0,0.08);
+      --radius: 16px;
+      --font-heading: 'Montserrat', sans-serif;
+      --font-body: 'Lato', sans-serif;
+      --font-meta: 'Poppins', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); font-size: 16px; color: var(--text-primary); background: var(--bg-page); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+
+    /* ── Scroll animations ── */
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── Hero ── */
+    .hero-top-bar { background: linear-gradient(90deg, var(--primary), var(--accent-light)); height: 4px; width: 100%; }
+    .hero { background: linear-gradient(155deg, var(--dark) 0%, var(--primary-deeper) 50%, var(--primary-dark) 100%); color: var(--white); padding: 72px 60px 64px; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; top: -40%; right: -15%; width: 700px; height: 700px; background: radial-gradient(circle, #ffffff12 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
+    .hero::after { content: ''; position: absolute; bottom: -30%; left: -10%; width: 500px; height: 500px; background: radial-gradient(circle, #f7921c0d 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
+    .hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 2; }
+    .hero-brand { display: flex; align-items: center; gap: 16px; margin-bottom: 48px; }
+    .hero-brand .logo-img { height: 32px; width: auto; filter: brightness(0) invert(1); }
+    .hero-brand .logo-sep { width: 1px; height: 24px; background: rgba(255,255,255,0.25); }
+    .hero-brand .logo-sub { font-family: var(--font-meta); font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.5); }
+    .hero-eyebrow { display: inline-block; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 100px; padding: 6px 18px; font-family: var(--font-meta); font-size: 11px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 24px; color: var(--highlight); }
+    .hero h1 { font-family: var(--font-heading); font-size: 50px; font-weight: 400; line-height: 1.15; max-width: 720px; margin-bottom: 16px; letter-spacing: -0.02em; }
+    .hero h1 strong { font-weight: 700; }
+    .hero-sub { font-size: 17px; color: rgba(255,255,255,0.55); max-width: 660px; font-weight: 400; line-height: 1.7; margin-bottom: 44px; }
+    .hero-meta { display: flex; gap: 40px; flex-wrap: wrap; }
+    .hero-meta-item { display: flex; flex-direction: column; gap: 4px; }
+    .hero-meta-label { font-family: var(--font-meta); font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: #f7921ce6; }
+    .hero-meta-value { font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.75); }
+
+    /* ── Editorial / Intro ── */
+    .editorial { max-width: 780px; margin: 0 auto; padding: 80px 40px; }
+    .editorial-label { font-family: var(--font-meta); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--primary); margin-bottom: 20px; }
+    .editorial-text { font-size: 17px; line-height: 1.85; color: var(--text-mid); }
+    .editorial-text p { margin-bottom: 16px; }
+    .editorial-text p:last-child { margin-bottom: 0; }
+    .editorial-divider { width: 48px; height: 3px; background: var(--primary); border-radius: 2px; margin-top: 32px; }
+
+    /* ── Candidates section ── */
+    .candidates-section { background: var(--bg-light); padding: 80px 0; }
+    .candidates-header { text-align: center; padding: 0 24px 48px; }
+    .candidates-header h2 { font-family: var(--font-heading); font-size: 32px; font-weight: 700; color: var(--text-primary); margin-bottom: 8px; }
+    .candidates-header p { font-family: var(--font-meta); font-size: 14px; color: var(--text-light); }
+
+    .batch-switcher { display: flex; justify-content: center; align-items: center; gap: 8px; margin: 0 auto 40px; max-width: 800px; padding: 0 24px; }
+    .batch-switcher[data-count="1"] { display: none; }
+    .batch-btn { display: flex; align-items: center; gap: 8px; padding: 11px 22px; border: 2px solid var(--border); border-radius: 10px; background: var(--bg-card); font-family: var(--font-meta); font-size: 13px; font-weight: 600; color: var(--text-light); cursor: pointer; transition: all 0.2s ease; }
+    .batch-btn:hover { border-color: var(--primary); color: var(--text-primary); }
+    .batch-btn.active { background: var(--primary); border-color: var(--primary); color: #fff; }
+    .batch-count { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background: var(--primary); color: white; font-size: 11px; font-weight: 700; }
+    .batch-btn.active .batch-count { background: var(--highlight); color: var(--dark); }
+    .batch-panel.hidden { display: none; }
+
+    .candidates { max-width: 900px; margin: 0 auto; padding: 0 24px 40px; display: flex; flex-direction: column; gap: 24px; }
+
+    /* ── Card design ── */
+    .candidate-card { max-width: 1100px; margin: 0 auto 40px; padding: 0 40px; }
+    .card { background: var(--bg-card); border-radius: 16px; overflow: hidden; border: none; box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 28px rgba(0,0,0,0.06); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 16px 48px rgba(0,0,0,0.1); }
+    .card.featured { box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 28px rgba(0,0,0,0.06), 0 0 0 1px #f7921c33; }
+    .card-top { background: var(--dark); padding: 36px 44px; display: flex; justify-content: space-between; align-items: flex-start; }
+    .card-identity { display: flex; align-items: center; gap: 20px; }
+    .card-avatar { width: 56px; height: 56px; border-radius: 50%; background: var(--primary); border: none; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; color: white; flex-shrink: 0; font-family: var(--font-heading); }
+    .card-avatar.featured-avatar { background: var(--highlight); color: var(--dark); }
+    .card-name { font-family: var(--font-heading); font-size: 22px; font-weight: 700; color: white; margin-bottom: 4px; }
+    .card-location { font-size: 14px; color: var(--on-dark-mid); display: flex; align-items: center; gap: 6px; }
+    .card-badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+    .badge { font-family: var(--font-meta); font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 10px; border-radius: 100px; }
+    .badge-shortlisted { background: #f7921c33; color: var(--primary); border: 1px solid #f7921c66; }
+    .card-rate { text-align: right; }
+    .card-rate-amount { font-size: 24px; font-weight: 700; color: var(--primary); font-family: var(--font-heading); }
+    .card-rate-period { font-family: var(--font-meta); font-size: 10px; color: var(--on-dark-mid); text-transform: uppercase; letter-spacing: 1px; }
+    .tap-badge { display: inline-flex; align-items: center; gap: 5px; background: linear-gradient(135deg, #f59e0b, #d97706); color: white; padding: 4px 10px; border-radius: 6px; font-family: var(--font-meta); font-size: 11px; font-weight: 700; letter-spacing: 0.04em; }
+
+    .tags-row { padding: 0 44px 16px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag { display: inline-block; padding: 5px 14px; border-radius: 100px; font-family: var(--font-meta); font-size: 11px; font-weight: 600; }
+    .tag-filled { background: var(--tag-bg); color: var(--tag-color); }
+    .tag-filled:nth-child(3) { background: var(--highlight); color: var(--dark); }
+    .tag-outlined { background: var(--bg-subtle); color: var(--text-mid); border: 1.5px solid var(--border-strong); }
+
+    .card-body { padding: 40px 44px; color: var(--text-mid); }
+    .card-section { margin-bottom: 0; }
+    .card-section-title { font-family: var(--font-meta); font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--primary); margin-bottom: 16px; margin-top: 32px; }
+    .card-section-title:first-of-type { margin-top: 0; }
+    .card-narrative { font-size: 16px; line-height: 1.85; color: var(--text-mid); margin-bottom: 32px; font-style: italic; border-left: 3px solid var(--primary); padding-left: 20px; }
+    .card-narrative strong { color: var(--text-primary); font-weight: 600; font-style: normal; }
+    .experience-list { display: flex; flex-direction: column; gap: 20px; }
+    .exp-item { display: flex; gap: 16px; align-items: flex-start; }
+    .exp-dot-col { display: flex; flex-direction: column; align-items: center; padding-top: 6px; }
+    .exp-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--primary); flex-shrink: 0; }
+    .exp-line { width: 1px; flex: 1; background: #f7921c33; margin-top: 6px; min-height: 30px; }
+    .exp-content { flex: 1; padding-bottom: 4px; }
+    .exp-role { font-size: 15px; font-weight: 600; color: var(--text-primary); }
+    .exp-company { font-size: 13px; color: var(--text-light); margin-top: 2px; }
+    .exp-highlight { font-size: 13px; color: var(--primary); margin-top: 4px; }
+    .tags-cluster { display: flex; flex-wrap: wrap; gap: 8px; }
+    .ctag { font-family: var(--font-meta); font-size: 11px; padding: 6px 14px; border-radius: 6px; background: var(--bg-subtle); color: var(--text-mid); }
+    .ctag-key { background: #f7921c1a; color: var(--primary); font-weight: 600; }
+    .fit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .fit-item { background: var(--bg-subtle); padding: 14px 16px; border-radius: 8px; border: 1px solid var(--border-strong); overflow: visible; word-wrap: break-word; }
+    .fit-label { font-size: 12px; color: var(--text-mid); line-height: 1.5; display: block; overflow: visible; white-space: normal; }
+    .strength-bars { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 24px; }
+    .bar-item { display: flex; flex-direction: column; gap: 6px; }
+    .bar-label { font-family: var(--font-meta); font-size: 12px; color: var(--text-mid); }
+    .bar-track { height: 5px; background: var(--bg-subtle); border-radius: 3px; overflow: hidden; }
+    .bar-fill { height: 100%; background: linear-gradient(90deg, var(--primary-dark), var(--primary)); border-radius: 3px; transition: width 1.5s ease; }
+    .card-actions { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--border); display: flex; align-items: center; gap: 14px; }
+    .video-intro-btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 22px; background: transparent; border: 1.5px solid var(--primary); border-radius: 6px; color: var(--primary); font-family: var(--font-meta); font-size: 13px; font-weight: 600; letter-spacing: 0.3px; text-decoration: none; transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease; }
+    .video-intro-btn:hover { background: var(--primary); color: #fff; transform: translateY(-1px); }
+
+    .experience-item { display: flex; justify-content: space-between; align-items: baseline; padding: 6px 0; border-bottom: 1px solid var(--border); }
+    .exp-dates { font-size: 12px; color: var(--text-light); white-space: nowrap; }
+
+    .strength-list { padding-left: 18px; }
+    .strength-list li { font-size: 14px; color: var(--text-mid); margin-bottom: 8px; line-height: 1.6; }
+
+    .card-footer { display: flex; align-items: center; justify-content: space-between; padding: 16px 44px; background: var(--bg-subtle); border-top: 1px solid var(--border); }
+    .footer-note { font-size: 13px; color: var(--text-light); }
+    .footer-note strong { color: var(--text-primary); }
+    .btn-group { display: flex; gap: 8px; }
+    .btn-card { display: inline-flex; align-items: center; gap: 6px; padding: 9px 18px; border-radius: 8px; font-family: var(--font-meta); font-size: 13px; font-weight: 600; text-decoration: none; transition: all 0.15s; cursor: pointer; }
+    .btn-outline { background: var(--bg-card); color: var(--primary); border: 1.5px solid var(--primary); }
+    .btn-outline:hover { background: var(--tag-bg); }
+    .btn-primary-card { background: var(--primary); color: white; border: 1.5px solid var(--primary); }
+    .btn-primary-card:hover { background: var(--primary-dark); }
+    .btn-card svg { width: 15px; height: 15px; }
+    .btn-tap { background: linear-gradient(135deg, #f59e0b, #d97706); color: white; border: none; }
+
+    .card-recruiter-note { margin: 0; padding: 20px 24px; background: linear-gradient(135deg, #f7921c0d, #f7921c05); border-left: 3px solid var(--primary); border-radius: 0 10px 10px 0; }
+    .card-recruiter-note .recruiter-note-title { font-family: var(--font-meta); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--primary); margin-bottom: 8px; }
+    .card-recruiter-note p { font-size: 14px; color: var(--text-mid); line-height: 1.7; }
+
+    /* ── Comparison table ── */
+    .comparison-section { max-width: 1100px; margin: 20px auto 40px; padding: 0 40px; }
+    .comparison-table-wrap { overflow-x: auto; border-radius: var(--radius); box-shadow: var(--shadow-md); }
+    .comparison-table { width: 100%; border-collapse: collapse; background: var(--bg-card); font-size: 13px; color: var(--text-mid); border-radius: 12px; overflow: hidden; }
+    .comparison-table thead th { background: var(--dark); color: var(--primary); padding: 14px 16px; text-align: left; font-family: var(--font-meta); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; }
+    .comparison-table thead th:first-child { border-radius: 14px 0 0 0; }
+    .comparison-table thead th:last-child { border-radius: 0 14px 0 0; }
+    .comparison-table tbody td { padding: 12px 16px; border-bottom: 1px solid var(--border); }
+    .comparison-table tbody tr:last-child td { border-bottom: none; }
+    .comparison-table tbody tr:hover { background: var(--bg-card-hover); }
+    .comparison-table .highlight-cell { background: #f7921c1a; font-weight: 600; color: var(--primary); }
+
+    /* ── Advisor ── */
+    .advisor-section { max-width: 780px; margin: 0 auto; padding: 80px 40px 40px; }
+    .advisor-section-label { font-family: var(--font-meta); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--primary); margin-bottom: 20px; text-align: center; }
+    .advisor-card { display: flex; gap: 28px; background: var(--bg-card); border-radius: 16px; padding: 36px; box-shadow: var(--shadow-md); border: 1px solid var(--border); }
+    .advisor-avatar { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid var(--primary); flex-shrink: 0; }
+    .advisor-info { flex: 1; }
+    .advisor-label { font-family: var(--font-meta); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--primary); margin-bottom: 4px; }
+    .advisor-name { font-family: var(--font-heading); font-size: 22px; font-weight: 700; color: var(--text-primary); }
+    .advisor-role { font-family: var(--font-meta); font-size: 13px; color: var(--text-light); margin-bottom: 12px; }
+    .advisor-summary { font-size: 14px; color: var(--text-mid); line-height: 1.75; }
+
+    /* ── Sagan info block ── */
+    .sagan-info { max-width: 780px; margin: 0 auto; padding: 0 40px 60px; }
+    .sagan-info-inner { display: flex; gap: 32px; justify-content: center; padding: 32px 0; border-top: 1px solid var(--border); }
+    .sagan-stat { text-align: center; }
+    .sagan-stat-number { font-family: var(--font-heading); font-size: 28px; font-weight: 700; color: var(--primary); }
+    .sagan-stat-label { font-family: var(--font-meta); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--text-light); margin-top: 4px; }
+
+    /* ── Footer CTA ── */
+    .footer-cta { background: var(--dark); padding: 72px 40px; text-align: center; }
+    .footer-cta h2 { font-family: var(--font-heading); font-size: 32px; font-weight: 400; color: white; margin-bottom: 12px; }
+    .footer-cta h2 strong { font-weight: 700; }
+    .footer-cta p { font-size: 16px; color: rgba(255,255,255,0.5); margin-bottom: 32px; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .footer-contact { display: inline-block; padding: 14px 36px; background: var(--primary); color: white; border-radius: 8px; font-family: var(--font-meta); font-size: 14px; font-weight: 600; text-decoration: none; letter-spacing: 0.3px; transition: background 0.2s ease, transform 0.15s ease; }
+    .footer-contact:hover { background: var(--primary-dark); transform: translateY(-1px); }
+
+    /* ── Footer ── */
+    .site-footer { text-align: center; padding: 32px; color: rgba(255,255,255,0.4); font-family: var(--font-meta); font-size: 12px; background: var(--dark); border-top: 1px solid rgba(255,255,255,0.08); }
+    .footer-logos { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 12px; }
+    .footer-logos img { height: 22px; opacity: 0.5; }
+    .footer-x { font-size: 16px; color: rgba(255,255,255,0.2); }
+    .site-footer a { color: var(--primary); text-decoration: none; }
+
+    @media (max-width: 768px) {
+      .hero { padding: 48px 24px 48px; }
+      .hero h1 { font-size: 32px; }
+      .hero-meta { gap: 24px; }
+      .card-top { flex-direction: column; padding: 24px; gap: 16px; }
+      .card-body { padding: 24px; }
+      .candidate-card { padding: 0 16px; }
+      .editorial { padding: 48px 24px; }
+      .fit-grid { grid-template-columns: 1fr; }
+      .strength-bars { grid-template-columns: 1fr; }
+      .advisor-card { flex-direction: column; text-align: center; }
+      .comparison-table { font-size: 11px; }
+      .sagan-info-inner { flex-direction: column; gap: 20px; }
+      .footer-cta { padding: 48px 24px; }
+      .footer-cta h2 { font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero-top-bar"></div>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-brand">
+        <img class="logo-img" src="https://ultimatedentallab.com/wp-content/uploads/2021/08/8211-Digital-Scaling-Image.jpg" alt="Ultimate Dental Lab" />
+        <div class="logo-sep"></div>
+        <span class="logo-sub">Talent Selection</span>
+      </div>
+      <div class="hero-eyebrow">Sagan Talent Search</div>
+      <h1><strong>Dental Lab Data Entry &amp; Digital Case Intake Specialist</strong> Candidates for Ultimate Dental Lab</h1>
+      <p class="hero-sub">Curated talent, vetted and matched to your specific needs. Each profile below has been carefully evaluated for role alignment, skills, and cultural fit.</p>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Candidates</span>
+          <span class="hero-meta-value">3 profiles</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Batch</span>
+          <span class="hero-meta-value">1 &middot; June 1, 2026</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="hero-meta-label">Advisor</span>
+          <span class="hero-meta-value">Vicky Martinez</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="editorial fade-in">
+    <div class="editorial-label">Our Selection Rationale</div>
+    <div class="editorial-text">
+      <p>Hi Janne,</p><p>I'm thrilled to share our top three candidates for the Data Entry &amp; Digital Case Intake Specialist role, carefully selected because they all have direct experience handling strict medical data and patient confidentiality. Unlike general administrative profiles, these three stand out because they actually understand clinical workflows and dental terminology from organizing digital attachments and STL files to interpreting clinical prescriptions and reviewing intraoral scans.</p>
+    </div>
+    <div class="editorial-divider"></div>
+  </section>
+
+  <section class="candidates-section">
+    <div class="candidates-header fade-in">
+      <h2>Candidate Profiles</h2>
+      <p>Each candidate has been carefully selected and evaluated for this role.</p>
+    </div>
+
+    <div class="batch-switcher" id="batch-switcher" data-count="1">
+      <button class="batch-btn active" onclick="showBatch(1)" data-batch="1">
+        <span>Batch 1</span>
+        <span class="batch-count">3</span>
+      </button>
+    </div>
+
+    <div id="batch-1" class="batch-panel">
+      <div class="candidates">
+        
+    <div class="candidate-card">
+      <div class="card featured" id="candidate-0">
+        <div class="card-top">
+          <div class="card-identity">
+            <div class="card-avatar featured-avatar">TM</div>
+            <div>
+              <div class="card-name">Thabisa M</div>
+              <div class="card-location">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                South Africa &middot; 4 yrs Admin/Data Entry
+              </div>
+              <div class="card-badges">
+                
+                <span class="badge badge-shortlisted">Pre-Shortlisted</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-rate">
+            <div class="card-rate-amount">$1,500/mo</div>
+            <div class="card-rate-period">USD / Month</div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          
+          <div class="card-narrative">
+            Thabisa is the calculated risk worth taking in this batch. She's the only one with actual dental lab data entry experience. Cherry Assistant background means she knows prescriptions, materials, shades. The whole package for your zero-error requirements.
+          </div>
+
+          
+          <div class="card-section-title">Experience Highlights</div>
+          <div class="experience-list">
+            
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Dental Administrative Assistant</div>
+                <div class="exp-company">Cherry Assistant &middot; Remote | 2023–2025 Dec</div>
+                <div class="exp-highlight">Entered and verified doctor prescriptions, material selections, shades, and special instructions into the company's case management system with high accuracy and strict adherence to SOPs.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Patient Records &amp; EHR Administrator</div>
+                <div class="exp-company">NIVA HEALTH &middot; Remote, South Africa | 2021–2023</div>
+                <div class="exp-highlight">• Managed patient records in EHR systems, ensuring accurate entry of patient demographics, clinical notes, prescriptions, and treatment information.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Administrative Assistant</div>
+                <div class="exp-company">UKZN &middot; Durban, South Africa | 2022–Present</div>
+                <div class="exp-highlight">• Managed calendars, scheduled appointments, and coordinated meetings across multiple time zones for remote clients.</div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Platforms &amp; Tools</div>
+          <div class="tags-cluster">
+            <span class="ctag ctag-key">Dental Lab Data Entry</span><span class="ctag ctag-key">EHR Systems</span><span class="ctag ctag-key">Digital File Management</span><span class="ctag ctag-key">SOPs</span><span class="ctag ctag-key">Data Integrity</span>
+            
+          </div>
+
+          
+          <div class="card-section-title">Ultimate Dental Lab Fit Indicators</div>
+          <div class="fit-grid">
+            
+            <div class="fit-item">
+              <div class="fit-label">Cherry Assistant dental lab experience → Already knows prescriptions, material selections, shades that Ultimate Dental Lab processes daily</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">STL files and digital scan handling → Familiar with iTero, 3Shape, Medit workflows your doctors submit</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">EHR data integrity protocols at NIVA HEALTH → Understands patient confidentiality and zero-error standards you require</div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Strength Profile</div>
+          <div class="strength-bars">
+            
+            <div class="bar-item">
+              <div class="bar-label">Dental Terminology</div>
+              <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Data Entry Accuracy</div>
+              <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Digital File Management</div>
+              <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">English Communication</div>
+              <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">SOPs Adherence</div>
+              <div class="bar-track"><div class="bar-fill" style="width:92%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Case Management Systems</div>
+              <div class="bar-track"><div class="bar-fill" style="width:78%"></div></div>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <a class="video-intro-btn" href="https://candidate-video.com/uploads/00a5700d-ec12-4b92-96ca-7dbb18198c56" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
+            
+            
+          </div>
+        </div>
+
+        
+        <div class="card-footer">
+          <div class="card-recruiter-note">
+            <div class="recruiter-note-title">Recruiter Note</div>
+            <p>Thabisa stands out as the only candidate with direct dental lab experience. Her Cherry Assistant role mirrors exactly what Ultimate Dental Lab needs: entering doctor prescriptions, material selections like zirconia and e.max, and shade specifications into case management systems. The NIVA HEALTH EHR background adds another layer of data integrity experience with patient confidentiality protocols. She's already familiar with digital dental workflows and STL file handling. At $1500/month, she sits right in your budget sweet spot. The trade-off: South Africa timezone requires some coordination, but her experience with remote dental workflows and proven English communication skills offset this concern.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="candidate-card">
+      <div class="card" id="candidate-1">
+        <div class="card-top">
+          <div class="card-identity">
+            <div class="card-avatar">RI</div>
+            <div>
+              <div class="card-name">Ross I</div>
+              <div class="card-location">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Philippines &middot; 18 months dental intake
+              </div>
+              <div class="card-badges">
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="card-rate">
+            <div class="card-rate-amount">$1,400/mo</div>
+            <div class="card-rate-period">USD / Month</div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          
+          <div class="card-narrative">
+            Ross is more than meets the eye in this batch. He's the only one who lives in dental case intake already. Nimbyx experience means zero learning curve on digital workflows, product codes, and quality standards. The scrappy pick who earned fast promotions.
+          </div>
+
+          
+          <div class="card-section-title">Experience Highlights</div>
+          <div class="experience-list">
+            
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Data Annotation Specialist</div>
+                <div class="exp-company">Nimbyx Philippines &middot; November 2025 – Present</div>
+                <div class="exp-highlight">Annotate and label digital case data within AI systems to improve model accuracy and support machine learning automation</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Dental Case Intake Specialist</div>
+                <div class="exp-company">Nimbyx Philippines &middot; May 2024 – November 2025</div>
+                <div class="exp-highlight">Organize digital files for dental orders</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Customer Service Professional –Health Insurance</div>
+                <div class="exp-company">Concentrix &middot; May 2023 –December 2023</div>
+                <div class="exp-highlight">Successfully met a key performance indicator normally accomplished by experienced employees within my second month of call handling.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Customer Associate</div>
+                <div class="exp-company">LBC Express Inc. &middot; July 2022 – April 2023</div>
+                <div class="exp-highlight">Successfully handled an outlet branch independently within four months of employment.</div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Platforms &amp; Tools</div>
+          <div class="tags-cluster">
+            <span class="ctag ctag-key">Digital case intake</span><span class="ctag ctag-key">Data annotation</span><span class="ctag ctag-key">AI systems</span><span class="ctag ctag-key">Order routing</span><span class="ctag ctag-key">Medical confidentiality</span>
+            <span class="ctag">Administrative management</span>
+          </div>
+
+          
+          <div class="card-section-title">Ultimate Dental Lab Fit Indicators</div>
+          <div class="fit-grid">
+            
+            <div class="fit-item">
+              <div class="fit-label">18 months dental case intake at Nimbyx → Zero learning curve on digital impressions and product codes Ultimate uses</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">Health insurance customer service background → Natural fit for patient confidentiality and HIPAA-style requirements</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">Data annotation specialist with AI systems → Comfortable with digital workflows and strict accuracy standards</div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Strength Profile</div>
+          <div class="strength-bars">
+            
+            <div class="bar-item">
+              <div class="bar-label">Dental Terminology</div>
+              <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Data Entry Accuracy</div>
+              <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Digital Workflow Management</div>
+              <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Patient Confidentiality</div>
+              <div class="bar-track"><div class="bar-fill" style="width:92%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Communication Skills</div>
+              <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Magic Touch System</div>
+              <div class="bar-track"><div class="bar-fill" style="width:65%"></div></div>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <a class="video-intro-btn" href="https://candidate-video.com/uploads/a8617b6c-12a8-49d4-884e-aaa35fa7f7d2" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
+            
+            
+          </div>
+        </div>
+
+        
+        <div class="card-footer">
+          <div class="card-recruiter-note">
+            <div class="recruiter-note-title">Recruiter Note</div>
+            <p>Ross brings the exact experience Ultimate Dental Lab burned through budget trying to find. 18 months at Nimbyx doing digital case intake means he already knows the workflow: organizing files, interpreting orders, routing to manufacturing. His promotion to Data Annotation shows he masters processes quickly and earns trust. The health insurance background gives him the confidentiality mindset you need for patient data. At $1,400/month, he's the wallet-friendly option who won't need months of dental terminology training. The trade-off: smaller company experience, but his Nimbyx role mirrors your needs perfectly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="candidate-card">
+      <div class="card" id="candidate-2">
+        <div class="card-top">
+          <div class="card-identity">
+            <div class="card-avatar">RP</div>
+            <div>
+              <div class="card-name">Raul P</div>
+              <div class="card-location">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Costa Rica &middot; 2+ yrs Dental Industry
+              </div>
+              <div class="card-badges">
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="card-rate">
+            <div class="card-rate-amount">$2,000/mo</div>
+            <div class="card-rate-period">USD / Month</div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          
+          <div class="card-narrative">
+            Raul brings genuine dental industry horsepower to this batch. Two years validating dental scans at Dental Monitoring means he actually knows the terminology, the workflows, the precision standards. Tank-level experience for your zero-error requirements.
+          </div>
+
+          
+          <div class="card-section-title">Experience Highlights</div>
+          <div class="experience-list">
+            
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Clinical Validator / Technical Validator</div>
+                <div class="exp-company">Dental Monitoring – Remote &middot; April 2023- August 2025</div>
+                <div class="exp-highlight">- Reviewed and validated AI-generated orthodontic and dental treatment findings.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                <div class="exp-line"></div>
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Data Entry – Patient Appointment Scheduling</div>
+                <div class="exp-company">KMC Solutions – Remote &middot; Dec 2021 – March 2022</div>
+                <div class="exp-highlight">- Accurately collected and entered patient information into scheduling systems.</div>
+              </div>
+            </div>
+            <div class="exp-item">
+              <div class="exp-dot-col">
+                <div class="exp-dot"></div>
+                
+              </div>
+              <div class="exp-content">
+                <div class="exp-role">Customer Service Representative, Technical Support</div>
+                <div class="exp-company">Startek International – San Pedro Sula, Honduras &middot; May 2021 – August 2021</div>
+                <div class="exp-highlight">- Provided high-quality customer support in a dynamic, high-volume environment.</div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Platforms &amp; Tools</div>
+          <div class="tags-cluster">
+            <span class="ctag ctag-key">Dental Monitoring Platform</span><span class="ctag ctag-key">Intraoral Scan Analysis</span><span class="ctag ctag-key">Clinical Validation</span><span class="ctag ctag-key">Microsoft Office</span><span class="ctag ctag-key">Data Entry</span>
+            <span class="ctag">Healthcare Compliance</span>
+          </div>
+
+          
+          <div class="card-section-title">Ultimate Dental Lab Fit Indicators</div>
+          <div class="fit-grid">
+            
+            <div class="fit-item">
+              <div class="fit-label">2 years validating intraoral scans at Dental Monitoring → Zero learning curve on iTero, 3Shape, and Medit files</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">Clinical accuracy validation experience → Matches your zero-error ratio requirement exactly</div>
+            </div>
+            <div class="fit-item">
+              <div class="fit-label">Healthcare data compliance protocols → Understands HIPAA-like confidentiality standards from day one</div>
+            </div>
+          </div>
+
+          
+          <div class="card-section-title">Strength Profile</div>
+          <div class="strength-bars">
+            
+            <div class="bar-item">
+              <div class="bar-label">Dental Terminology</div>
+              <div class="bar-track"><div class="bar-fill" style="width:95%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Data Entry Accuracy</div>
+              <div class="bar-track"><div class="bar-fill" style="width:92%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Healthcare Compliance</div>
+              <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Digital Workflows</div>
+              <div class="bar-track"><div class="bar-fill" style="width:88%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Microsoft Office</div>
+              <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
+            </div>
+            <div class="bar-item">
+              <div class="bar-label">Communication</div>
+              <div class="bar-track"><div class="bar-fill" style="width:82%"></div></div>
+            </div>
+          </div>
+
+          <div class="card-actions">
+            <a class="video-intro-btn" href="https://candidate-video.com/uploads/074a8b43-a116-41bb-bc04-32a0533e6b6e" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>Watch Intro Video</a>
+            
+            
+          </div>
+        </div>
+
+        
+        <div class="card-footer">
+          <div class="card-recruiter-note">
+            <div class="recruiter-note-title">Recruiter Note</div>
+            <p>Raul is the heavyweight dental professional in this batch. While others bring general admin skills, he spent 2 years at Dental Monitoring doing exactly what Ultimate needs: reviewing intraoral scans, validating treatment findings, and handling patient data with clinical precision. He knows the difference between iTero and 3Shape files because he's worked with them. The dental terminology that killed your India outsourcing? Non-issue here. Yes, he's $400-600 more than the others, but you're paying for someone who won't need 6 months to learn what zirconia and e.max mean. Worth every penny when zero errors is your dealbreaker.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="fade-in">
+        
+  <div class="comparison-section">
+    <div class="section-label" style="padding-bottom:20px;">
+      <h2>Side-by-Side Comparison</h2>
+      <p>Key criteria at a glance to help you prioritize interviews.</p>
+    </div>
+    <div class="comparison-table-wrap">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Criteria</th>
+            <th>Thabisa M</th><th>Ross I</th><th>Raul P</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Location</strong></td><td>South Africa</td><td>Philippines</td><td>Costa Rica</td></tr>
+          <tr><td><strong>Experience</strong></td><td>4 yrs Admin/Data Entry</td><td>18 months dental intake</td><td>2+ yrs Dental Industry</td></tr>
+          <tr><td><strong>Key Employers</strong></td><td>Cherry Assistant, NIVA HEALTH, UKZN</td><td>Nimbyx Philippines, Concentrix, LBC Express Inc.</td><td>Dental Monitoring – Remote, KMC Solutions – Remote, Startek International – San Pedro Sula, Honduras</td></tr>
+          <tr><td><strong>Core Strength</strong></td><td>Dental Lab Data Entry, EHR Systems, Digital File Management</td><td>Digital case intake, Data annotation, AI systems</td><td>Dental Monitoring Platform, Intraoral Scan Analysis, Clinical Validation</td></tr>
+          <tr><td><strong>HRIS / Tools</strong></td><td>Dental Lab Data Entry, EHR Systems, Digital File Management, SOPs, Data Integrity</td><td>Digital case intake, Data annotation, AI systems, Order routing, Medical confidentiality</td><td>Dental Monitoring Platform, Intraoral Scan Analysis, Clinical Validation, Microsoft Office, Data Entry</td></tr>
+          <tr><td><strong>Languages</strong></td><td>English</td><td>English</td><td>Spanish, English</td></tr>
+          <tr><td><strong>Education</strong></td><td>Bachelor of Public Administration (University of KwaZulu-Natal (UKZN))</td><td>Associate degree in Pre-Dentistry (Centro Escolar University)</td><td>High School Diploma (Atlantic Bilingual School, Puerto Cortés, Honduras)</td></tr>
+          <tr><td><strong>Rate</strong></td><td>$1,500/mo</td><td class="highlight-cell">$1,400/mo</td><td>$2,000/mo</td></tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="advisor-section fade-in">
+    <div class="advisor-section-label">Your Talent Advisor</div>
+    <div class="advisor-card">
+      <img class="advisor-avatar" src="https://saganrecruitment.com/wp-content/uploads/2025/10/Vicky-Martinez.jpeg" alt="Vicky Martinez" />
+      <div class="advisor-info">
+        <div class="advisor-label">Sagan Talent Advisor</div>
+        <div class="advisor-name">Vicky Martinez</div>
+        <div class="advisor-role">Sagan · Recruitment Team — Talent Advisor</div>
+        <p class="advisor-summary">Vicky has over four years of experience building talent pipelines and conducting screenings. She is your direct point of contact for scheduling interviews and coordinating next steps.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="sagan-info">
+    <div class="sagan-info-inner">
+      <div class="sagan-stat">
+        <div class="sagan-stat-number">20,000+</div>
+        <div class="sagan-stat-label">Applications / month</div>
+      </div>
+      <div class="sagan-stat">
+        <div class="sagan-stat-number">2,000+</div>
+        <div class="sagan-stat-label">Placements made</div>
+      </div>
+      <div class="sagan-stat">
+        <div class="sagan-stat-number">30+</div>
+        <div class="sagan-stat-label">Countries</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="footer-cta fade-in">
+    <h2>Ready to <strong>meet your next Dental Lab Data Entry &amp; Digital Case Intake Specialist?</strong></h2>
+    <p>Tell us who you want to interview and we'll set it up within 24 hours.</p>
+    <a class="footer-contact" href="mailto:jesus.p@getsagan.com">Schedule Next Steps</a>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-logos">
+      <img src="https://ultimatedentallab.com/wp-content/uploads/2021/08/8211-Digital-Scaling-Image.jpg" alt="Ultimate Dental Lab" style="height:22px;" onerror="this.style.display='none'" />
+      <span class="footer-x">&times;</span>
+      <img src="https://saganrecruitment.com/wp-content/uploads/2025/10/Sagan-Logo-2-e1759568299542.png" alt="Sagan" />
+    </div>
+    <p>Prepared by <a href="https://getsagan.com" target="_blank">Sagan</a> for Ultimate Dental Lab &middot; Dental Lab Data Entry &amp; Digital Case Intake Specialist Search &middot; June 1, 2026</p>
+  </footer>
+
+  <script>
+    function showBatch(n) {
+      document.querySelectorAll('.batch-panel').forEach(p => p.classList.add('hidden'));
+      document.querySelectorAll('.batch-btn').forEach(b => b.classList.remove('active'));
+      var panel = document.getElementById('batch-' + n);
+      var btn = document.querySelector('[data-batch="' + n + '"]');
+      if (panel) panel.classList.remove('hidden');
+      if (btn) btn.classList.add('active');
+    }
+
+    /* Scroll animations */
+    (function() {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      document.querySelectorAll('.fade-in').forEach(function(el) { observer.observe(el); });
+
+      /* Animate candidate cards */
+      document.querySelectorAll('.candidate-card').forEach(function(el) {
+        el.classList.add('fade-in');
+        observer.observe(el);
+      });
+
+      /* Animate strength bars on scroll */
+      var barObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var fills = entry.target.querySelectorAll('.bar-fill');
+            fills.forEach(function(fill) {
+              var w = fill.style.width;
+              fill.style.width = '0%';
+              setTimeout(function() { fill.style.width = w; }, 100);
+            });
+            barObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      document.querySelectorAll('.strength-bars').forEach(function(el) { barObserver.observe(el); });
+    })();
+  </script>
+</body>
+</html>
